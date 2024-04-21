@@ -143,8 +143,83 @@ input[type = "text"]::placeholder {
     margin-right: 10px;
 }
 
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info i {
+    margin-right: 10px;
+    padding: 4px 7px 4px 7px;
+    font-size: 10px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+}
+
+.info p {
+    margin: 0;
+    font-size: 16px;
+}
 
 /* Section 1 */
+
+/* Section 2 */
+
+.carte_h {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 245.33px;
+    height: 202.25px;
+    margin: 30px 30px 0 0;
+    padding: 0 0 10px 0;
+    box-shadow: 0 1px 10px rgba(36, 36, 36, 0.2);
+}
+
+.carte_h:nth-child(3n) {
+    margin-right: 0;
+}
+
+.carte_h img {
+    height: 114px;
+    width: 245.33px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.carte_h .contenu {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.txt h3 {
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+}
+
+.txt p {
+    margin: 0 0 10px 0;
+}
+
+.contenu .card-rating i {
+    font-size: 15px;
+} 
+
+.cartes_h {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+}
+
+.plus {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Section 2 */
 
 :root {
     --main-color: #0065FC;
@@ -216,12 +291,12 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 67%;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 30%;
 }
 
 .populaires-title {
