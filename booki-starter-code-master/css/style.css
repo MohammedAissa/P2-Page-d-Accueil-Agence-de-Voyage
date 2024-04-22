@@ -166,6 +166,10 @@ input[type = "text"]::placeholder {
 
 /* Section 2 */
 
+.hebergements-and-populaires {
+    margin-bottom: 70px;
+}
+
 .carte_h {
     background-color: white;
     border: 5px solid white;
@@ -220,6 +224,80 @@ input[type = "text"]::placeholder {
 }
 
 /* Section 2 */
+
+/* Section 3 */
+
+.activites {
+    padding: 0 30px 0 30px;
+    margin-bottom: 70px;
+}
+
+.activites h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.activites .cartes_a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activites .carte_a {
+    box-shadow: 0 1px 10px rgba(36, 36, 36, 0.2);
+    border-radius: 20px;
+}
+
+.activites .carte_a img {
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.activites .carte_a h3 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 19px;
+    background-color: white;
+}
+
+/* Section 3 */
+
+/* Footer */
+
+footer {
+    background-color: var(--main-bg-color);
+    height: 163px;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+#listePrincipale {
+    display: flex;
+    flex-direction: row;
+}
+
+#listePrincipale .titre {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#listePrincipale ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 433px;
+    display: inline;
+}
+
+#listePrincipale ul li {
+    margin-bottom: 25px;
+}
+
+/* Footer */
 
 :root {
     --main-color: #0065FC;
