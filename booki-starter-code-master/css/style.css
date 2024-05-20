@@ -99,11 +99,11 @@ input[type = "text"]::placeholder {
     font-weight: 700;
     width: 131px;
     height: 45px;
-    border: solid 1px var(--main-color: #0065FC);
+    border: solid 1px var(--main-color);
     border-radius: 0 15px 15px 0;
 }
 
-#btnRechercher #lienTexte {
+#btnRechercher #btnTexte {
     padding: 0 4% 0 4%;
 }
 
@@ -133,7 +133,7 @@ input[type = "text"]::placeholder {
     height: 40px;
     margin-right: 10px;
     padding: 0 15px 0 15px;
-    font-size: 17px;
+    font-size: clamp(0.9em, 1vw, 1em);
     font-weight: 700;
 }
 
@@ -208,16 +208,17 @@ input[type = "text"]::placeholder {
 }
 
 .txt h3 {
-    margin: 3% 0 4% 0;
-    font-size: 16px;
+    margin: 1% 0 4% 0;
+    font-size: 1em;
 }
 
 .txt p {
-    margin: 0 0 2% 0;
+    margin: 0 0 1% 0;
+    font-size: clamp(0.9em, 1vw, 1em);
 }
 
 .contenu .card-rating i {
-    font-size: 15px;
+    font-size: 0.9em;
 }
 
 .cartes_h {
@@ -286,9 +287,7 @@ input[type = "text"]::placeholder {
 
 footer {
     background-color: var(--main-bg-color);
-    height: 163px;
     width: 100%;
-    padding: 20px;
 }
 
 ul {
@@ -298,11 +297,12 @@ ul {
 #listePrincipale {
     display: flex;
     flex-direction: row;
+    padding: 2% 0 0 2%;
 }
 
 #listePrincipale li {
-    margin-right: 19%;
-    width: 200%;
+    margin-right: 18%;
+    width: 100%;
 }
 
 #listePrincipale .titre {
@@ -317,7 +317,7 @@ ul {
 }
 
 #listePrincipale ul li {
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 /* Footer */
@@ -480,17 +480,17 @@ a {
         font-size: 13px;
     }
 
-    .activites {
-        width: 100%;
-    }
-
     .activites .carte_a img {
         height: 200px;
     }
 
     #listePrincipale li {
-        margin-right: 23%;
+        margin: 1%;
     }
+
+
+
+}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -500,6 +500,7 @@ a {
     body {
         padding: 0;
         margin: 0;
+        width: 100%;
     }
 
     .main-container {
@@ -564,9 +565,9 @@ a {
     }
 
     .listeFiltres li button {
-        font-size: 14px;
+        font-size: clamp(0.8em, 1vw, 1em);
         height: 50px;
-        width: 156px;
+        width: 100%;
         border-radius: 25px;
         display: flex;
         justify-content: flex-start;
@@ -575,13 +576,18 @@ a {
 
     .listeFiltres li {
         margin-bottom: 5%;
+        width: 49%;
     }
 
     .listeFiltres {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 117px;
+    }
+
+    #iconeRecherche {
+        border-radius: 13px 0 0 13px;
+        border: 1px solid var(--main-bg-color);
     }
 
     #btnRechercher {
@@ -591,7 +597,7 @@ a {
         width: 55px;
     }
 
-    #btnRechercher #lienTexte {
+    #btnRechercher #btnTexte {
         display: none;
     }
     
@@ -661,6 +667,10 @@ a {
         width: 90%;
     }
 
+    .txt h3 {
+        margin-bottom: 0.5em;
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: column;
@@ -708,25 +718,21 @@ a {
         height: 141px;
     }
 
-    footer {
-        margin: 0;
-        width: 100%;
-        height: auto;
-    }
-
     #listePrincipale {
         display: flex;
         flex-direction: column;
+        padding: 10% 0 0 10%;
     }
 
     #listePrincipale li {
         margin-bottom: 10%;
+        width: 99%;
+        margin-right: 0;
     }
 
     #listePrincipale li ul li {
         margin-bottom: 1%;
     }
-
 
     /* Section 1 - Recherche */
 
